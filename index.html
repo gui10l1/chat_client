@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat v1</title>
+  <link rel="stylesheet" href="./build/css/index.css">
+</head>
+
+<body>
+  <header id="header">
+    <header>
+      <h1>Bem-vindo!</h1>
+    </header>
+
+    <main>
+      <div>
+        <label for="username">Antes de tudo, insira seu nome! <span>*</span></label>
+        <input type="text" id="username" placeholder="Seu nome aqui!">
+      </div>
+
+      <div>
+        <div>
+          <label for="textColor">Cor do seu <strong>nome</strong>:</label>
+          <input type="color" id="nameColor" class="colorPicker">
+        </div>
+
+        <div>
+          <label for="textColor">Cor do <strong>texto</strong>:</label>
+          <input type="color" id="textColor" class="colorPicker">
+        </div>
+      </div>
+    </main>
+  </header>
+
+  <main id="main">
+    <div id="messagesContainer"></div>
+
+    <form id="chatForm">
+      <input type="text" name="message" maxlength="255" required>
+
+      <button type="submit" disabled id="sendMessageButton">Enviar</button>
+    </form>
+  </main>
+
+  <footer id="footer">
+    <p>
+      Todos os direitos reservados
+    </p>
+  </footer>
+
+  <script src="./build/js/bundle.js"></script>
+</body>
+
+</html>
